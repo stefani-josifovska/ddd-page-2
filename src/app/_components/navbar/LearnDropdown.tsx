@@ -13,6 +13,7 @@ const LearnDropdown: React.FC<{}> = () => {
           title={item.title}
           desc={item.description}
           url={item.url}
+          customSize={undefined}
         />
       ))}
     </div>
