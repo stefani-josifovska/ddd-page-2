@@ -1,0 +1,91 @@
+@import "../../globalStyles.scss";
+
+.container {
+  @extend .width;
+}
+
+.priceBoxesContainer {
+  display: flex;
+  gap: 30px;
+}
+
+.priceContainer {
+  margin-top: 64px;
+  text-align: center;
+
+  & h4 {
+    color: $main-orange;
+  }
+
+  & h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 32px;
+  }
+
+  & ul {
+    width: fit-content;
+    margin: auto;
+    margin-top: 32px;
+  }
+
+  & li {
+    color: $text-blue;
+    text-align: left;
+  }
+
+  & p {
+    margin-top: 32px;
+    font-size: 0.7rem;
+    color: $main-blue;
+  }
+}
+
+.pricingCtaContainer {
+  margin-top: 32px;
+
+  & li {
+    color: $main-blue;
+  }
+}
+
+.priceContainer,
+.pricingCtaContainer {
+  padding: 32px;
+  box-shadow: $card-shadow;
+  border-radius: $card-radius;
+}
+
+.priceContainer li,
+.pricingCtaContainer li {
+  line-height: 2rem;
+}
+
+.priceContainer li::before,
+.pricingCtaContainer li::before {
+  content: url("../../_assets/bulletPoint.svg");
+  width: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.introSection {
+  margin-top: 64px;
+
+  & h3 {
+    font-size: 1.2rem;
+  }
+
+  & h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .priceBoxesContainer {
+    display: revert;
+  }
+
+  .priceContainer {
+    margin-top: 32px;
+  }
+}

@@ -1,0 +1,102 @@
+@import "../../globalStyles.scss";
+
+.container,
+.subtitle {
+  @extend .width;
+}
+
+.subtitle {
+  font-size: 2rem;
+}
+
+.questDiv {
+  & > div {
+    border-bottom: 1px solid black;
+  }
+
+  & h3 {
+    font-size: 1.4rem;
+    margin-right: 30px;
+  }
+
+  & h4 {
+    color: $main-orange;
+    font-weight: 600;
+    margin-right: 30px;
+  }
+
+  & p {
+    color: $main-blue;
+  }
+}
+
+.linkCont {
+  border-bottom: none !important;
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+
+  & a {
+    color: $main-blue;
+  }
+}
+
+.questSubtitle {
+  color: $main-orange !important;
+  font-weight: 500;
+  margin-right: 30px;
+}
+
+.answer {
+  margin: 0;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease-out;
+}
+
+.dispAnswer {
+  margin-top: 10px;
+  opacity: 1;
+  max-height: 200px; /* Adjust this value based on your content */
+  // max-height: fit-content;
+}
+
+.hideAnswer {
+  max-height: 0;
+  opacity: 0;
+  transition: none;
+}
+
+.arrow {
+  transform: rotate(180deg);
+}
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > div {
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.stickyTitle {
+  position: sticky;
+  top: 50vh;
+  margin: auto;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1279px) {
+  .container {
+    & > div:first-of-type {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,190 @@
+@import "../../globalStyles.scss";
+
+.container {
+  @extend .width;
+  position: sticky;
+  top: 0;
+  background: transparent;
+  height: $navbar-height;
+  z-index: 40;
+
+  & > .desktopNav {
+    display: flex;
+    align-items: center;
+  }
+
+  & > div > div button:first-of-type {
+    margin-right: $navbar-gap;
+  }
+
+  & ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 20px;
+    gap: $navbar-gap;
+
+    & li {
+      color: white;
+
+      &:hover {
+        transform: scale(0.95);
+      }
+    }
+  }
+
+  & > div {
+    padding-block: 12px;
+  }
+}
+
+.mobileNav {
+  display: none;
+}
+
+.logoImg {
+  margin-top: -4px;
+}
+
+.navbarItem > a,
+.navbarItem > button {
+  display: inline-block;
+  line-height: 3rem;
+  font-weight: 300;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.navbar {
+  height: calc($navbar-height + 24px);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.navbar--scrolled {
+  background: $main-blue;
+}
+
+@media (min-width: 1279px) {
+  .navDropdownContainer {
+    position: relative;
+
+    & > div {
+      position: absolute;
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: $border-radius;
+      box-shadow: $box-shadow;
+
+      & ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+      }
+
+      & li {
+        color: black;
+      }
+
+      &:hover .toggleDisp,
+      & button:focus + .toggleDisp,
+      & a:focus + .toggleDisp {
+        display: block;
+      }
+    }
+  }
+
+  .navDropdownContainer:hover .toggleDisp,
+  .navDropdownContainer button:focus + .toggleDisp,
+  .navDropdownContainer a:focus + .toggleDisp {
+    display: block;
+  }
+
+  .toggleDisp {
+    display: none;
+    left: -250%;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: fade-in 0.5s ease-in-out forwards,
+      slide-down 0.3s ease-in-out forwards;
+  }
+}
+
+@media (max-width: 1279px) {
+  .container {
+    padding-block: 12px;
+  }
+
+  .desktopNav {
+    display: none !important;
+  }
+
+  .mobileNav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    height: $navbar-height;
+
+    & > div {
+      animation: fade-in 0.5s ease-in-out forwards,
+        slide-down 0.3s ease-in-out forwards;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      z-index: 100;
+      background: linear-gradient(28.25deg, #005683 20.94%, #238abe 65.96%);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+
+    & ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-right: revert;
+    }
+  }
+
+  .closeBtn {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+  }
+
+  .backBtn {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+  }
+}

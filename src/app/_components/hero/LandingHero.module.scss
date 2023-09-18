@@ -1,0 +1,48 @@
+@import "../../globalStyles.scss";
+
+.container {
+  background: $main-gradient;
+  margin-top: -$navbar-height;
+  min-height: 100vh;
+  height: fit-content;
+  max-height: 750px;
+  overflow-y: hidden;
+
+  // & h1 {
+  //   font-weight: 500;
+  // }
+}
+
+.container > div {
+  @extend .width;
+}
+
+.container div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 7rem;
+  margin-bottom: 4rem;
+  width: 50%;
+  text-align: center;
+
+  & p {
+    color: white;
+  }
+}
+
+.unbreakableString {
+  @extend .unbreakableString;
+}
+
+.imgContainer img {
+  width: 120%;
+}
+
+@media (max-width: 1279px) {
+  .container div:first-of-type {
+    width: 80%;
+    margin-top: calc($navbar-height + 20px);
+  }
+}

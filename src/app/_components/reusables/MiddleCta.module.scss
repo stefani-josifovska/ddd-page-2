@@ -1,0 +1,23 @@
+@import "../../globalStyles.scss";
+
+.container {
+  @extend .width;
+  @extend .verticalMargin;
+  box-shadow: $card-shadow;
+  padding: 45px;
+  border-radius: $card-radius;
+  text-align: center;
+
+  & > p {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  & h2 {
+    font-size: 2rem;
+  }
+
+  & button {
+    margin-block-start: 20px;
+  }
+}

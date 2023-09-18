@@ -1,0 +1,37 @@
+$main-blue: #005683;
+$text-blue: #435288;
+$main-orange: #df511d;
+$main-gray: rgb(65, 65, 65);
+$navbar-height: 48px;
+$navbar-gap: 1rem;
+$card-radius: 12px;
+$border-radius: 8px;
+$max-container-width: 1536px;
+$width: 80%;
+$box-shadow: 2px 2px 10px $main-gray;
+$card-shadow: 0px 0px 3px $main-gray;
+$main-gradient: linear-gradient(9deg, #005683 20.94%, #238abe 65.96%);
+
+.unbreakableString {
+  white-space: nowrap;
+}
+
+.width {
+  width: $width;
+  max-width: $max-container-width;
+  margin: auto;
+
+  & h2 {
+    margin-bottom: 16px;
+  }
+}
+
+.verticalMargin {
+  margin-block: 5rem;
+}
+
+@media (max-width: 1279px) {
+  .verticalMargin {
+    margin-block: 2rem;
+  }
+}

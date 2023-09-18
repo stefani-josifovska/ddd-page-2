@@ -1,0 +1,57 @@
+@import "../../globalStyles.scss";
+
+.container {
+  @extend .width;
+
+  & > span {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  & h2 {
+    font-size: 2rem;
+  }
+
+  & > div {
+    padding: 32px;
+    min-height: 400px;
+    // background-image: url("./caseStudy.png");
+    box-shadow: $card-shadow;
+    border-radius: $card-radius;
+    background: linear-gradient(
+        to right,
+        rgba(255, 193, 73, 1) 35%,
+        rgba(0, 0, 0, 0)
+      ),
+      url("./caseStudyContent/caseStudy.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.content {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  color: white;
+
+  & span {
+    color: rgba(232, 73, 14, 1);
+  }
+
+  & p:last-of-type {
+    font-size: 1.3rem;
+  }
+
+  & p:first-of-type {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    width: 70%;
+  }
+}

@@ -1,0 +1,43 @@
+@import "../../globalStyles.scss";
+
+.primaryBtn,
+.secBtn {
+  font-size: 1rem;
+  border-radius: 19px;
+  // padding: 0.5rem 1rem;
+  padding-block: 0.5rem;
+  min-width: 125px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+.primaryBtn {
+  color: white;
+
+  &.blueBtn {
+    background-color: $main-blue;
+    border: 2px solid $main-blue;
+  }
+
+  &.orangeBtn {
+    background-color: $main-orange;
+    border: 2px solid $main-orange;
+  }
+}
+
+.secBtn {
+  &.blueBtn {
+    background-color: transparent;
+    border: 2px solid $main-blue;
+  }
+
+  &.orangeBtn {
+    background-color: transparent;
+    border: 2px solid $main-orange;
+    color: $main-orange;
+    // color: white;
+  }
+}

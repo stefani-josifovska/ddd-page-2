@@ -1,0 +1,68 @@
+@import "../../globalStyles.scss";
+
+.container {
+  background: $main-gradient;
+  padding-block: 6rem;
+
+  & p,
+  & span,
+  & a,
+  & h2,
+  & h3 {
+    color: white;
+  }
+
+  & > div {
+    @extend .width;
+  }
+
+  & > div:last-of-type {
+    & div:first-child {
+      flex: 1;
+      & p {
+        font-weight: 200;
+      }
+    }
+
+    & div:last-child {
+      flex: 3;
+    }
+  }
+}
+
+.firstFooterSec {
+  width: 50%;
+
+  & h3 {
+    font-size: 1.1rem;
+  }
+
+  & h2 {
+    font-size: 2rem;
+  }
+}
+
+.subLink {
+  font-weight: 200;
+}
+
+.link {
+  font-weight: 400;
+}
+
+.subLink:hover,
+.link:hover {
+  opacity: 0.8;
+}
+
+.footerMenu {
+  & a:hover {
+    opacity: 0.65;
+  }
+
+  & li {
+    color: white;
+    opacity: 0.8;
+    font-weight: 300;
+  }
+}

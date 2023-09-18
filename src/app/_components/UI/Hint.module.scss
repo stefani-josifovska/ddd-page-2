@@ -1,0 +1,78 @@
+@import "../../globalStyles.scss";
+
+.hintBtn,
+.titledHint {
+  background-color: $main-orange;
+  color: white;
+  height: 1.7rem;
+  // text-align: center;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  transition: height 0.5s, width 0.5s !important;
+  -webkit-transition: max-height 0.5s, width 0.5s;
+  padding: 0 0.4rem;
+  // max-height: fit-content;
+  user-select: none;
+
+  & p {
+    font-size: 0.8rem !important;
+    color: white !important;
+    // width: 0;
+  }
+}
+
+.hintBtn {
+  width: 1.7rem;
+}
+
+.plusSign {
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+}
+
+.hintTitleSpan {
+  font-size: 1rem;
+  line-height: 1.7rem;
+  white-space: nowrap;
+}
+
+.titledHint {
+  width: 240px;
+  // width: min-content;
+
+  & div {
+    width: fit-content;
+  }
+}
+
+.hintBtn:hover,
+.titledHint:hover {
+  height: 150px;
+  width: 240px;
+  z-index: 5;
+  padding-bottom: 0.4rem;
+  transform-origin: left top;
+}
+
+.hintContent {
+  height: calc(100% - 1.5rem);
+  overflow-y: auto;
+}
+
+.hintContent::-webkit-scrollbar {
+  width: 7px;
+}
+
+.hintContent::-webkit-scrollbar-track {
+  background: rgba(245, 172, 145, 0.46);
+  border-radius: 10px;
+}
+
+.hintContent::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+
+.hintContent::-webkit-scrollbar-thumb:hover {
+  opacity: 0.95;
+}

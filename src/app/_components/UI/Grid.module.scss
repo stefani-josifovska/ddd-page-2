@@ -1,0 +1,58 @@
+@import "../../globalStyles.scss";
+
+.container {
+  @extend .width;
+  @extend .verticalMargin;
+  display: flex;
+  gap: 32px;
+
+  & > div {
+    flex: 1;
+    margin-block: auto;
+
+    & > span {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+
+  & h2 {
+    font-size: 2rem;
+  }
+
+  & h3 {
+    font-size: 1.2rem;
+  }
+
+  & p,
+  & li {
+    color: $text-blue;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  & ul li {
+    list-style-type: disc;
+  }
+
+  & ol {
+    list-style-type: decimal;
+  }
+
+  & ul,
+  & ol {
+    margin-block-end: 2rem;
+
+    & li {
+      margin-left: 16px;
+      padding-bottom: 0;
+      line-height: 2rem;
+    }
+  }
+}
+
+@media (max-width: 1279px) {
+  .container {
+    display: revert;
+  }
+}

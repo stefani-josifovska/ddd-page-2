@@ -1,0 +1,47 @@
+@import "../../globalStyles.scss";
+
+.container {
+  @extend .width;
+  @extend .verticalMargin;
+
+  & h2 {
+    font-size: 2rem;
+    width: 50%;
+  }
+
+  & > span {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+
+.boxContainer {
+  box-shadow: $card-shadow;
+  padding: 16px;
+  border-radius: $card-radius;
+  text-align: center;
+  // margin-block: 20px;
+
+  & h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  & span {
+    color: $main-orange;
+    font-weight: 500;
+  }
+
+  & p,
+  & a {
+    color: $text-blue;
+  }
+
+  & a {
+    margin-top: auto;
+  }
+}
+
+.boxLink {
+  color: $main-orange !important;
+}

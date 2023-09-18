@@ -1,0 +1,54 @@
+@import "../../../globalStyles.scss";
+
+.container {
+  @extend .width;
+  margin-block: 64px;
+
+  & h1 {
+    color: $main-blue;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  & h2 {
+    font-size: 2rem;
+  }
+
+  & h3 {
+    font-size: 1.75rem;
+  }
+
+  & ul {
+    padding-left: 16px;
+  }
+
+  & ul li {
+    list-style-type: disc;
+  }
+
+  & p,
+  & li {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-bottom: 0.7rem;
+  }
+
+  & a {
+    color: $main-blue;
+  }
+
+  @media (max-width: 1279px) {
+    & {
+      text-align: justify;
+    }
+  }
+}
+
+.header {
+  height: calc($navbar-height + 24px);
+  background-color: $main-blue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}

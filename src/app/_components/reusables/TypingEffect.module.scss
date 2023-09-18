@@ -1,0 +1,40 @@
+@import "../../globalStyles.scss";
+
+@font-face {
+  font-family: "MPlusCode";
+  src: url("../../../../public/fonts/MPLUS1Code-Regular.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+.container {
+  box-shadow: $card-shadow;
+  border-radius: $card-radius;
+  // background-color: #0d142f;
+  padding: 32px;
+  // min-height: 400px;
+  min-height: calc(25.2rem + 2 * 2rem);
+  display: flex;
+  // font: var(--font-mpluscode);
+  font-family: "MPlusCode", sans-serif;
+  width: 80%;
+
+  @media (max-width: 1279px) {
+    & {
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.success {
+  color: green;
+}
+
+.indentation {
+  display: inline-block;
+  width: 0.4rem;
+  // white-space: normal;
+  // text-indent: 20px; /* Adjust the value as needed */
+}

@@ -1,0 +1,73 @@
+@import "../../globalStyles.scss";
+
+// .heroBtns {
+//   & button:first-of-type {
+//     margin-right: 16px;
+//   }
+// }
+
+.heroBtns a:first-of-type {
+  margin-right: 16px;
+}
+
+.container {
+  @extend .width;
+  margin-block: 5rem;
+
+  & h2 {
+    font-size: 2rem;
+    width: 50%;
+  }
+
+  & h3 {
+    font-size: 1.2rem;
+  }
+
+  & h4 {
+    font-size: 1.5rem;
+  }
+
+  & h5 {
+    color: $main-orange;
+  }
+}
+
+.boxesContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5%;
+  row-gap: 20px;
+
+  & > div {
+    // width: 20%;
+    max-width: 18%;
+  }
+}
+
+@media (max-width: 1279px) {
+  .container {
+    & h2 {
+      width: 80%;
+    }
+  }
+  .boxesContainer {
+    display: revert;
+
+    & > div {
+      max-width: 100%;
+      margin-block: 20px;
+    }
+  }
+}
+
+@media (max-width: 497px) {
+  .heroBtns a {
+    width: 100%;
+  }
+
+  .heroBtns a:first-of-type {
+    margin-bottom: 16px;
+    margin-right: 0;
+  }
+}
