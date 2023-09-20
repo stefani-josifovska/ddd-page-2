@@ -59,13 +59,27 @@ const Carousel: React.FC<{}> = () => {
           <button
             onClick={() => onChooseCountryHandler("prev")}
             key={countries[otherCountries.prev].country}
+            className={classes.textBtn}
           >
             {countries[otherCountries.prev].country}
           </button>
-          <Image src={semiCircle} alt="" />
+          <button
+            className={classes.symbolBtn}
+            onClick={() => onChooseCountryHandler("prev")}
+          >
+            &lt;
+          </button>
+          <Image src={semiCircle} alt="" className={classes.textBtn} />
+          <button
+            className={classes.symbolBtn}
+            onClick={() => onChooseCountryHandler("next")}
+          >
+            &gt;
+          </button>
           <button
             onClick={() => onChooseCountryHandler("next")}
             key={countries[otherCountries.next].country}
+            className={classes.textBtn}
           >
             {countries[otherCountries.next].country}
           </button>

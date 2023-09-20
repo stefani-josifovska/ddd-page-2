@@ -11,7 +11,7 @@ import peppolLogo from "./peppol.svg";
 const Footer: React.FC<{}> = () => {
   return (
     <section className={classes.container}>
-      <div className="flex justify-between items-center">
+      <div className="lg:flex justify-between items-center">
         <div className={classes.firstFooterSec}>
           <h3>Compliance made easy</h3>
           <h2 className="mb-1">Ready to get started?</h2>
@@ -27,7 +27,11 @@ const Footer: React.FC<{}> = () => {
           />
         </div>
         <div>
-          <Image src={peppolLogo} alt="Peppol service provider" />
+          <Image
+            src={peppolLogo}
+            alt="Peppol service provider"
+            className={classes.peppolImgContainer}
+          />
         </div>
       </div>
       <div className="xl:flex gap-32 my-16 pt-16 pb-10">

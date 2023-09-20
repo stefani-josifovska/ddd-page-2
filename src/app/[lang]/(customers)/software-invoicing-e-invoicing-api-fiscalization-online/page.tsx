@@ -104,7 +104,7 @@ const Vendors: React.FC<{}> = () => {
         </div>
       </Grid>
       <CaseStudies />
-      <CustomerCta />
+      <CustomerCta text="Start with the DDD Invoices platform and enable e-invoicing & fiscalization for your ERP today." />
     </>
   );
 };

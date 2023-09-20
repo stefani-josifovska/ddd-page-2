@@ -85,7 +85,7 @@ const Ticketing: React.FC<{}> = () => {
         </div>
       </Grid>
       <CodeExample />
-      <CustomerCta />
+      <CustomerCta text="Start with DDD Invoices platform and provide fiscalization & more to your clients today." />
     </>
   );
 };

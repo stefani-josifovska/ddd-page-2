@@ -113,13 +113,45 @@
   }
 }
 
+.symbolBtn {
+  display: none;
+}
+
 .slideRight {
-  animation: slide-right 0.5s ease-in-out forwards;
+  // animation: slide-right 0.5s ease-in-out forwards;
+  animation: fade-in 0.5s ease-in-out forwards;
 }
 
 @media (max-width: 1279px) {
   .container {
     margin-left: revert;
     height: 300px;
+  }
+
+  .firstLayer a:last-of-type {
+    width: 60%;
+  }
+
+  .secondLayer {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .textBtn {
+    display: none;
+  }
+
+  .symbolBtn {
+    display: block;
+    font-size: 1.3rem;
+    margin-inline: 1rem;
+    min-width: 2rem !important;
+    height: 2rem;
+    box-shadow: $card-shadow;
+    border-radius: 2rem;
+
+    &:focus {
+      transform: translateY(5px);
+    }
   }
 }

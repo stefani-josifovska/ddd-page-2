@@ -45,3 +45,9 @@
 .boxLink {
   color: $main-orange !important;
 }
+
+@media (max-width: 1279px) {
+  .container h2 {
+    width: 100%;
+  }
+}

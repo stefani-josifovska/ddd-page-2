@@ -29,6 +29,7 @@ export type hintObject = {
   positionY: string;
   content: hintContentEl[];
   title?: string;
+  width?: string;
 };
 
 export type hintsType = hintObject[];

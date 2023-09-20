@@ -66,3 +66,13 @@
     font-weight: 300;
   }
 }
+
+@media (max-width: 1279px) {
+  .firstFooterSec {
+    width: 100%;
+
+    .peppolImgContainer {
+      width: 10px;
+    }
+  }
+}

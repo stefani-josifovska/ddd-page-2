@@ -39,4 +39,16 @@
   .container > div {
     display: revert;
   }
+
+  .container h2 {
+    margin-top: 1rem;
+  }
+
+  .logoContainer > div {
+    justify-content: flex-start;
+  }
+
+  .compLogoContainer img {
+    height: 5rem;
+  }
 }

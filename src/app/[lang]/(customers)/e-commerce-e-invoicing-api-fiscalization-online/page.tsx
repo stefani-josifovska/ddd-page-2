@@ -88,7 +88,7 @@ const Commerce: React.FC<{}> = () => {
         </div>
       </Grid>
       <CodeExample />
-      <CustomerCta />
+      <CustomerCta text="Start with the DDD Invoices platform and enjoy automated compliant billing for your eCommerce business today." />
     </>
   );
 };

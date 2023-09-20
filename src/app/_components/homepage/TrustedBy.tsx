@@ -8,9 +8,11 @@ const TrustedBy: React.FC<{}> = () => {
     <section className={`${classes.container} my-20 `}>
       <div>
         <h2>Trusted by</h2>
-        <div className={`${classes.logoContainer} grid grid-cols-2 lg:grid-cols-4 gap-y-8`}>
+        <div
+          className={`${classes.logoContainer} grid grid-cols-2 lg:grid-cols-4 gap-y-8`}
+        >
           {companies.map((company) => (
-            <div key={company.alt}>
+            <div key={company.alt} className={classes.compLogoContainer}>
               <Image src={company.img} alt={company.alt} />
             </div>
           ))}

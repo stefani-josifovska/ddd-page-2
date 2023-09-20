@@ -76,7 +76,7 @@ const Saas: React.FC<{}> = () => {
         </div>
       </Grid>
       <CodeExample />
-      <CustomerCta />
+      <CustomerCta text="Start with the DDD Invoices platform and enable compliant invoicing for your SaaS today" />
     </>
   );
 };

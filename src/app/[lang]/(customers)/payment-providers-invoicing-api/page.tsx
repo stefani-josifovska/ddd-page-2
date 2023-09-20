@@ -78,7 +78,7 @@ const PaymentProv: React.FC<{}> = () => {
         </div>
       </Grid>
       <CodeExample />
-      <CustomerCta />
+      <CustomerCta text="Start with DDD Invoices platform and increase stickiness of your clients today" />
     </>
   );
 };

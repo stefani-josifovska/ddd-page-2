@@ -37,18 +37,20 @@
 }
 
 .titledHint {
-  width: 240px;
+  // width: 240px;
+  // width: 200px;
   // width: min-content;
 
   & div {
-    width: fit-content;
+    // width: fit-content;
+    width: 100%;
   }
 }
 
 .hintBtn:hover,
 .titledHint:hover {
   height: 150px;
-  width: 240px;
+  width: 240px !important;
   z-index: 5;
   padding-bottom: 0.4rem;
   transform-origin: left top;

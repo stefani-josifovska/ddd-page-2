@@ -29,7 +29,7 @@ export const questions: questionObjectType[] = [
     answer:
       "Use our dashboard only for monitoring. Issue and receive compliant invoices directly from your software with correct VAT & language in +30 countries.",
     image: sendRes,
-    alt: "proba",
+    alt: "",
     hints: [
       {
         positionX: "65%",
@@ -38,6 +38,7 @@ export const questions: questionObjectType[] = [
           "Use the dashboard to oversee invoices, credit-notes & storno invoices, that you or your customers have issued/received from other softwares.",
         ],
         title: "Oversee the invoices",
+        width: "12.5rem",
       },
       {
         positionX: "30%",
@@ -54,10 +55,10 @@ export const questions: questionObjectType[] = [
     answer:
       "Automate compliance with country specific e-invoicing standards & issue e-invoices to tax authorities and clients around the world.",
     image: eInv,
-    alt: "proba",
+    alt: "",
     hints: [
       {
-        positionX: "-15%",
+        positionX: "57%",
         positionY: "77%",
         content: [
           "E-Invoice is an invoice in a structured, machine-readable electronic format (XML, UBL 2.1 . etc.) that can be sent directly from software to software.",
@@ -68,6 +69,7 @@ export const questions: questionObjectType[] = [
           },
         ],
         title: "What is an e-invoice?",
+        width: "14rem",
       },
     ],
   },
@@ -77,10 +79,10 @@ export const questions: questionObjectType[] = [
     answer:
       "Upgrade your software with compliant B2C invoicing and simplified e-reporting/live reporting  to tax authorities.",
     image: realTime,
-    alt: "proba",
+    alt: "",
     hints: [
       {
-        positionX: "-30%",
+        positionX: "65%",
         positionY: "70%",
         content: [
           "Real-time reporting or fiscalization is mostly used in B2C invoicing for the purpose of transaction reporting to the tax authorities.",
@@ -91,6 +93,7 @@ export const questions: questionObjectType[] = [
           },
         ],
         title: "Real-time reporting",
+        width: "12.5rem"
       },
     ],
   },
@@ -100,15 +103,16 @@ export const questions: questionObjectType[] = [
     answer:
       "Safely store invoices for the legally required period (5-10 years), e-sign and EU time-stamp them.",
     image: archive,
-    alt: "proba",
+    alt: "",
     hints: [
       {
-        positionX: "-20%",
+        positionX: "55%",
         positionY: "34%",
         content: [
           "Safely store invoices and attachments on a legally approved, secure, clustered, and encrypted archive with back-ups providing you with peace of mind.",
         ],
         title: "Archiving invoices",
+        width: "11.5rem"
       },
       {
         positionX: "42%",
@@ -133,15 +137,16 @@ export const questions: questionObjectType[] = [
     answer:
       "Perform month-end/year-end tax reporting with a simple click using invoices from the archive (not required in all countries).",
     image: taxRecord,
-    alt: "proba",
+    alt: "",
     hints: [
       {
-        positionX: "-30%",
+        positionX: "70%",
         positionY: "46%",
         content: [
           "Safely store invoices and attachments on a legally approved, secure, clustered, and encrypted archive with back-ups providing you with peace of mind.",
         ],
         title: "Tax reporting",
+        width: "10rem"
       },
     ],
   },
@@ -151,16 +156,17 @@ export const questions: questionObjectType[] = [
     answer:
       "Automate the invoice workflow from data-to-delivery and effortlessly handle billing & mass-invoicing.",
     image: invoiceAut,
-    alt: "proba",
+    alt: "",
     hints: [
       {
-        positionX: "-25%",
-        positionY: "47%",
+        positionX: "57%",
+        positionY: "50%",
         content: [
           "Set up the flow of the invoice once and have it work every time.",
           "Whether you're an online store owner with invoice data or an enterprise with periodic mass invoicing - feed the API with your data and our platform will generate compliant invoices, distribute & report them to tax atuhorities and clients, store them as per your requirements or return them back to your software.",
         ],
         title: "Automation",
+        width: "9rem"
       },
     ],
   },

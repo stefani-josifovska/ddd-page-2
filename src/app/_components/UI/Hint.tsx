@@ -11,6 +11,7 @@ const Hint: React.FC<{ hint: hintObject }> = ({ hint }) => {
       style={{
         top: hint.positionY,
         ...(hint.title ? { right: hint.positionX } : { left: hint.positionX }),
+        ...(hint.width ? { width: hint.width } : {}),
       }}
     >
       <div className={`${hint.title ? "flex justify-between" : ""}`}>

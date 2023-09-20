@@ -83,7 +83,7 @@ const Marketplace: React.FC<{}> = () => {
         </div>
       </Grid>
       <CodeExample />
-      <CustomerCta />
+      <CustomerCta text="Start with the DDD Invoices platform and compliant multi-tenant billing for marketplaces today." />
     </>
   );
 };

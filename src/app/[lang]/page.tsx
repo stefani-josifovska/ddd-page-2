@@ -6,7 +6,7 @@ import Prefooter from "../_components/prefooter/Prefooter";
 import Grid from "../_components/UI/Grid";
 import classes from "../_components/homepage/Homepage.module.scss";
 import Image from "next/image";
-import NetworkImg from "../_components/homepage/network.svg";
+import NetworkImg from "../_components/homepage/network.png";
 import QuestionsContainer from "../_components/questions/QuestionsContainer";
 import Carousel from "../_components/reusables/Carousel";
 import Link from "next/link";
