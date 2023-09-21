@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./CaseStudies.module.scss";
-import trebjesaImg from "./caseStudyContent/trebjesa.svg";
-import sapImg from "../homepage/logo1.svg";
+import trebjesaImg from "./caseStudyContent/trebjesa2.svg";
+import sapImg from "./caseStudyContent/sap.png";
 import Image from "next/image";
 
 const CaseStudies: React.FC<{}> = () => {
@@ -14,7 +14,7 @@ const CaseStudies: React.FC<{}> = () => {
           <div className={classes.content}>
             <div className="flex gap-8">
               <Image src={trebjesaImg} alt="trebjesa" />
-              <Image src={sapImg} alt="SAP" height={200} />{" "}
+              <Image src={sapImg} alt="SAP" />{" "}
             </div>
             <p>
               DDD Invoices managed to quickly lend a helping hand when a SAP

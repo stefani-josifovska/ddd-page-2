@@ -1,0 +1,52 @@
+@import "../../globalStyles.scss";
+
+.container {
+  position: fixed;
+  background: white;
+  border-radius: $card-radius;
+  width: 80vw;
+  margin-left: 10vw;
+  bottom: 60px;
+  padding: 2rem;
+  z-index: 43;
+}
+
+.backdrop {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 42;
+}
+
+.consentButtons {
+  width: max-content;
+  //   min-width: 130px;
+  margin-left: 1rem;
+
+  & button {
+    // min-width: 125px;
+    width: 100%;
+    min-width: max-content;
+  }
+
+  & button:last-of-type {
+    color: $main-blue !important;
+    margin-top: 1rem;
+  }
+}
+
+.firstConsentContainer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+
+  & p,
+  & a {
+    color: $main-blue;
+  }
+
+  & a {
+    text-decoration: underline;
+  }
+}

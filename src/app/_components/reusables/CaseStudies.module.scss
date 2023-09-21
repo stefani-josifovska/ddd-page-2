@@ -48,6 +48,12 @@
   & p:first-of-type {
     font-size: 1.5rem;
   }
+
+  & > div img:last-of-type {
+    height: 60px;
+    width: 100px;
+    align-self: center;
+  }
 }
 
 @media (max-width: 600px) {
