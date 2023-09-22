@@ -24,9 +24,9 @@
       }
     }
 
-    & div:last-child {
-      flex: 3;
-    }
+    // & div:last-child {
+    //   flex: 3;
+    // }
   }
 }
 
@@ -75,5 +75,9 @@
   .peppolImgContainer {
     width: 50%;
     margin-top: 16px;
+  }
+
+  .container > div:last-of-type {
+    margin-top: 2rem;
   }
 }

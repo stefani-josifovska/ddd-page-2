@@ -26,7 +26,7 @@ const Footer: React.FC<{}> = () => {
             className="px-10"
           />
         </div>
-        <div>
+        <div className="hidden xl:block">
           <Image
             src={peppolLogo}
             alt="Peppol service provider"
@@ -50,7 +50,7 @@ const Footer: React.FC<{}> = () => {
           </p>
         </div>
         <div
-          className={`grid grid-cols-2 md:grid-cols-4 gap-8 ${classes.footerMenu}`}
+          className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8 xl:mt-0 ${classes.footerMenu}`}
         >
           {items.map((item, index) => (
             <div key={`footer-item-${index}`}>
@@ -73,6 +73,13 @@ const Footer: React.FC<{}> = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="block xl:hidden">
+        <Image
+          src={peppolLogo}
+          alt="Peppol service provider"
+          className={classes.peppolImgContainer}
+        />
       </div>
     </section>
   );
