@@ -10,6 +10,7 @@ import ButtonLink from "../UI/ButtonLink";
 import CalendlyPopup from "../reusables/CalendlyPopup";
 import CustomersDropdown from "./CustomersDropdown";
 import LearnDropdown from "./LearnDropdown";
+import exportIcon from "../../_assets/exportIcon.svg";
 
 const Navbar: React.FC<{}> = () => {
   return (
@@ -49,7 +50,12 @@ const Navbar: React.FC<{}> = () => {
             }
             return (
               <li key={`navbar-item-${index}`} className={classes.navbarItem}>
-                <Link href={item.url}>{item.item}</Link>
+                <Link href={item.url} className={item.item === "API Documentation" ? "flex gap-1" : "inline-block"}>
+                  {item.item}{" "}
+                  {item.item === "API Documentation" && (
+                    <Image src={exportIcon} alt="" />
+                  )}
+                </Link>
               </li>
             );
           })}

@@ -44,9 +44,15 @@
   .heroWrapper {
     background-position-x: 50%;
     background-position-y: 25rem;
+    background-size: 100%;
+    padding-top: 7rem;
 
     & > div {
       display: revert;
+    }
+
+    & h1 {
+      font-size: 2rem;
     }
   }
 }

@@ -10,9 +10,10 @@ const DropdownItem: React.FC<{
   desc: string;
   url: string;
   customSize: number | undefined;
-}> = ({ img, title, desc, url, customSize }) => {
+  onCloseMobileMenu?: () => void;
+}> = ({ img, title, desc, url, customSize, onCloseMobileMenu }) => {
   return (
-    <div className={classes.linkContainer}>
+    <div className={classes.linkContainer} onClick={onCloseMobileMenu}>
       <Link href={url}>
         <div className="flex items-start">
           <Image

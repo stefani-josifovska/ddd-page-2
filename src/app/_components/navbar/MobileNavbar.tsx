@@ -93,8 +93,12 @@ const MobileNavbar: React.FC<{}> = () => {
               />
             </>
           )}
-          {chosenOption === "Customers" && <CustomersDropdown />}
-          {chosenOption === "Learn" && <LearnDropdown />}
+          {chosenOption === "Customers" && (
+            <CustomersDropdown onCloseMobileMenu={closeMenuHandler} />
+          )}
+          {chosenOption === "Learn" && (
+            <LearnDropdown onCloseMobileMenu={closeMenuHandler} />
+          )}
         </div>
       )}
     </div>

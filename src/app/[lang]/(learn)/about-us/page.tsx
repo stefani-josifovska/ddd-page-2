@@ -137,7 +137,7 @@ const Company: React.FC<{}> = () => {
               Website: www.DDDInvoices.com
               <br />
               Email: info@DDDInvoices.com <br />
-              Address: Letališka ulica 31j
+              Address: Letališka ulica 32j
               <br />
               1000 Ljubljana, Slovenia, EU
             </p>
