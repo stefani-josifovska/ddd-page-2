@@ -80,7 +80,7 @@ export default function Page({
           <Image
             src={NetworkImg}
             alt="DDD Invoices network"
-            className="mt-10 lg:mt-0"
+            className="mt-10 lg:mt-0 w-100 lg:w-3/5 m-auto"
           />
         </div>
       </Grid>

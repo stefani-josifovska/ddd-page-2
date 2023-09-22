@@ -39,7 +39,7 @@ const Commerce: React.FC<{}> = () => {
           </p>
         </div>
         <div>
-          <Image src={worldImg} alt="" className="m-auto" />
+          <Image src={worldImg} alt="" className="m-auto w-3/5" />
         </div>
       </Grid>
       <Benefits

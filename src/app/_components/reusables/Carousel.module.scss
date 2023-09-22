@@ -125,7 +125,15 @@
 @media (max-width: 1279px) {
   .container {
     margin-left: revert;
-    height: 300px;
+    min-height: 300px;
+  }
+
+  .countryCont {
+    height: 100px;
+  }
+
+  .imgCont {
+    height: 200px;
   }
 
   .firstLayer a:last-of-type {

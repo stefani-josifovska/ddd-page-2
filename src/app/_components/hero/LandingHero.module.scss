@@ -43,6 +43,7 @@
 @media (max-width: 1279px) {
   .container div:first-of-type {
     width: 80%;
-    margin-top: calc($navbar-height + 20px);
+    // margin-top: calc($navbar-height + 20px);
+    padding-top: 7rem;
   }
 }

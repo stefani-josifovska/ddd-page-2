@@ -21,3 +21,17 @@
     margin-block-start: 20px;
   }
 }
+
+@media (max-width: 1279px) {
+  .container {
+    padding: 24px;
+
+    & h2 {
+      font-size: 1.5rem;
+    }
+
+    & > p {
+      font-size: 0.8rem;
+    }
+  }
+}

@@ -44,7 +44,7 @@ const Enterprises: React.FC<{}> = () => {
         </div>
         <div>
           {" "}
-          <Image src={worldImg} alt="" className="m-auto" />
+          <Image src={worldImg} alt="" className="m-auto w-3/5" />
         </div>
       </Grid>
       <QuestionsContainer page="enterprise" />
