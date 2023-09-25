@@ -22,8 +22,8 @@ const CookieConsent: React.FC<{}> = () => {
     let cookieConsent = getCookie("cookieConsent");
     let localStorageItem = localStorage.getItem("cookieConsent");
 
-    // console.log(localStorageItem);
-    // console.log("read cookies");
+    console.log(localStorageItem);
+    console.log("read cookies");
 
     if (!(cookieConsent || localStorageItem)) setIsAccepted(false);
   }, []);
@@ -47,11 +47,7 @@ const CookieConsent: React.FC<{}> = () => {
       {!isAccepted && (
         <>
           <div className={classes.backdrop}></div>
-          <section
-            id="cookie-consent"
-            className={classes.container}
-            // style={{ display: "none" }}
-          >
+          <section id="cookie-consent" className={classes.container}>
             <div className="flex">
               <div className={classes.firstConsentContainer}>
                 <svg

@@ -17,8 +17,8 @@ const CaseStudies: React.FC<{}> = () => {
               <Image src={sapImg} alt="SAP" />{" "}
             </div>
             <p>
-              DDD Invoices managed to quickly lend a helping hand when a SAP
-              integrating partner required a compliant platform for a client.
+              DDD Invoices helped a SAP integrating partner, provide a
+              compliance solution for their client.
             </p>
             {/* <p>
               <span>Trebjesa brewery & SAP</span>
