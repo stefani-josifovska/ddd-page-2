@@ -12,6 +12,7 @@ import Carousel from "../_components/reusables/Carousel";
 import Link from "next/link";
 import CaseStudies from "../_components/reusables/CaseStudies";
 import ButtonLink from "../_components/UI/ButtonLink";
+import Footer from "../_components/footer/Footer";
 
 export default function Page({
   params: { lang },
@@ -124,6 +125,7 @@ export default function Page({
       </section>
       <CaseStudies />
       <Prefooter title="What sets DDD Invoices apart" />
+      <Footer />
     </>
   );
 }
