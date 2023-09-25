@@ -30,7 +30,7 @@ const CalendlyPopup: React.FC<{
       {isOpen && (
         <>
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-            <div className="relative my-6 mx-auto w-10/12 relative">
+            <div className="relative my-6 mx-auto w-full relative">
               <button
                 onClick={onCloseHandler}
                 className="hidden lg:block absolute right-12"
