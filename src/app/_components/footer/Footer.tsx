@@ -8,9 +8,13 @@ import Link from "next/link";
 import ButtonLink from "../UI/ButtonLink";
 import peppolLogo from "./peppol.svg";
 
-const Footer: React.FC<{}> = () => {
+const Footer: React.FC<{ page?: string }> = ({ page }) => {
   return (
-    <section className={classes.container}>
+    <section
+      className={`${classes.container} ${
+        page === "company" ? classes.blueBackground : ""
+      }`}
+    >
       <div className="lg:flex justify-between items-center">
         <div className={classes.firstFooterSec}>
           <h3>Compliance made easy</h3>
@@ -38,7 +42,7 @@ const Footer: React.FC<{}> = () => {
         <Image src={logo} alt="DDD Invoices" width={300} />
       </div>
       <div className="xl:flex gap-32 mt-16">
-        <div>
+        <div className="flex-1">
           <p className="xl:mb-0">
             DDD Invoices is an enterprise-grade platform delivering a secure
             infrastructure for creating, sending, receiving and storing

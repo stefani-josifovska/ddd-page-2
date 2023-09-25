@@ -66,7 +66,7 @@ export default function RootLayout({
         <CookieConsent />
         <Navbar />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

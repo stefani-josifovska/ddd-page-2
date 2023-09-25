@@ -12,6 +12,7 @@ import { Metadata } from "next";
 import CodeExample from "@/app/_components/reusables/CodeExample";
 import worldImg from "../../../_assets/world.webp";
 import Image from "next/image";
+import Footer from "@/app/_components/footer/Footer";
 
 export const metadata: Metadata = {
   title: {
@@ -89,6 +90,7 @@ const Commerce: React.FC<{}> = () => {
       </Grid>
       <CodeExample />
       <CustomerCta text="Start with the DDD Invoices platform and enjoy automated compliant billing for your eCommerce business today." />
+      <Footer />
     </>
   );
 };

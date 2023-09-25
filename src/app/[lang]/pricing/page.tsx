@@ -15,6 +15,7 @@ import MiddleCta from "@/app/_components/reusables/MiddleCta";
 import ImgContainer from "@/app/_components/UI/ImgContainer";
 import { Metadata } from "next";
 import CodeExample from "@/app/_components/reusables/CodeExample";
+import Footer from "@/app/_components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "DDD Invoices | Pricing",
@@ -110,6 +111,7 @@ const Pricing: React.FC<{}> = () => {
           <ImgContainer img={img3} />
         </div>
       </Grid>
+      <Footer />
     </>
   );
 };

@@ -47,3 +47,11 @@
     padding-top: 7rem;
   }
 }
+
+@media (max-width: 624px) {
+  .imgContainer {
+    margin-inline: 0 !important;
+    width: 100% !important;
+    margin-top: -56px !important;
+  }
+}

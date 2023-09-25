@@ -7,6 +7,7 @@ import { boxContent } from "./content";
 import Grid from "@/app/_components/UI/Grid";
 import Features from "./Features";
 import ButtonLink from "@/app/_components/UI/ButtonLink";
+import Footer from "@/app/_components/footer/Footer";
 
 const heroContent: heroContentObj = {
   title: "Builders",
@@ -91,6 +92,7 @@ const Builders: React.FC<{}> = () => {
         </Grid>
       </section>
       <Features />
+      <Footer />
     </>
   );
 };

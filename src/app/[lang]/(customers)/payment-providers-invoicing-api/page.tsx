@@ -11,6 +11,7 @@ import img3 from "./img3.png";
 import ImgContainer from "@/app/_components/UI/ImgContainer";
 import { Metadata } from "next";
 import CodeExample from "@/app/_components/reusables/CodeExample";
+import Footer from "@/app/_components/footer/Footer";
 
 export const metadata: Metadata = {
   title:
@@ -79,6 +80,7 @@ const PaymentProv: React.FC<{}> = () => {
       </Grid>
       <CodeExample />
       <CustomerCta text="Start with DDD Invoices platform and increase stickiness of your clients today" />
+      <Footer />{" "}
     </>
   );
 };

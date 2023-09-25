@@ -11,6 +11,7 @@ import worldImg from "../../../_assets/world.webp";
 import Image from "next/image";
 import hiddenUi from "../../../_assets/hiddenUiImg.webp";
 import embeddedImg from "./embedUI.png";
+import Footer from "@/app/_components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Global invoicing & e-invoicing with 1 API for SaaS",
@@ -77,6 +78,7 @@ const Saas: React.FC<{}> = () => {
       </Grid>
       <CodeExample />
       <CustomerCta text="Start with the DDD Invoices platform and enable compliant invoicing for your SaaS today" />
+      <Footer />
     </>
   );
 };

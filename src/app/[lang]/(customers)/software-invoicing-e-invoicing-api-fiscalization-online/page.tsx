@@ -13,6 +13,7 @@ import { Metadata } from "next";
 import ButtonLink from "@/app/_components/UI/ButtonLink";
 import worldImg from "../../../_assets/world.webp";
 import Image from "next/image";
+import Footer from "@/app/_components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Global e-invoicing API for ERP, CRM & softwares",
@@ -105,6 +106,7 @@ const Vendors: React.FC<{}> = () => {
       </Grid>
       <CaseStudies />
       <CustomerCta text="Start with the DDD Invoices platform and enable e-invoicing & fiscalization for your ERP today." />
+      <Footer />{" "}
     </>
   );
 };

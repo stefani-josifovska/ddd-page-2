@@ -8,6 +8,7 @@ import { Metadata } from "next";
 import QuestionsContainer from "@/app/_components/questions/QuestionsContainer";
 import worldImg from "../../../_assets/world.webp";
 import Image from "next/image";
+import Footer from "@/app/_components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Global e-invoicing platform for enterprises",
@@ -49,6 +50,7 @@ const Enterprises: React.FC<{}> = () => {
       </Grid>
       <QuestionsContainer page="enterprise" />
       <Prefooter title="More about the DDD Invoices platform" />
+      <Footer />
     </>
   );
 };

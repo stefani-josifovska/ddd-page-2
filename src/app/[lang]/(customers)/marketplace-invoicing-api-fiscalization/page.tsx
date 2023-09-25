@@ -12,6 +12,7 @@ import { Metadata } from "next";
 import CodeExample from "@/app/_components/reusables/CodeExample";
 import worldImg from "../../../_assets/world.webp";
 import Image from "next/image";
+import Footer from "@/app/_components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Tax compliant invoicing & eProcurement for marketplaces with 1 API",
@@ -84,6 +85,7 @@ const Marketplace: React.FC<{}> = () => {
       </Grid>
       <CodeExample />
       <CustomerCta text="Start with the DDD Invoices platform and compliant multi-tenant billing for marketplaces today." />
+      <Footer />
     </>
   );
 };

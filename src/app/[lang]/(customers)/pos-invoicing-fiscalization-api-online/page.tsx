@@ -12,6 +12,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import posImg from "../../../_assets/hiddenUiImg.webp";
 import CodeExample from "@/app/_components/reusables/CodeExample";
+import Footer from "@/app/_components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Invoicing & fiscalization for POS & ticketing systems",
@@ -86,6 +87,7 @@ const Ticketing: React.FC<{}> = () => {
       </Grid>
       <CodeExample />
       <CustomerCta text="Start with DDD Invoices platform and provide fiscalization & more to your clients today." />
+      <Footer />
     </>
   );
 };

@@ -15,6 +15,7 @@ import { hints } from "./content";
 import Hint from "@/app/_components/UI/Hint";
 import Platform1 from "../../_assets/platform1.webp";
 import Platform2 from "../../_assets/world.webp";
+import Footer from "@/app/_components/footer/Footer";
 
 export const metadata: Metadata = {
   title:
@@ -133,6 +134,7 @@ const Platform: React.FC<{}> = () => {
         </div>
       </Grid>
       <Prefooter title="More about the DDD Invoices platform" />
+      <Footer />
     </>
   );
 };

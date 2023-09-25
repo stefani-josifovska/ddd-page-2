@@ -8,6 +8,7 @@ import enterprise from "./icons/enterprises.svg";
 import build from "./icons/build.svg";
 import blog from "./icons/blog.svg";
 import company from "./icons/company.svg";
+import smb from "./icons/smb.svg";
 
 export interface MenuItem {
   item: string;
@@ -112,6 +113,20 @@ export const startupContent = {
       url: "/",
       icon: build,
       customSize: 18,
+    },
+  ],
+};
+
+export const smbContent = {
+  category: "SMBs (B2C, B2B, B2G)",
+  items: [
+    {
+      title: "Invoicing for small & medium businesses ",
+      description:
+        "Web UI invoicing application for issuing locally tax compliant invoices.",
+      url: "https://e-invoices.online",
+      icon: smb,
+      customSize: undefined,
     },
   ],
 };
