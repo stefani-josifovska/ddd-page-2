@@ -16,7 +16,7 @@ const TrustedBy: React.FC<{}> = () => {
               <Image src={company.img} alt={company.alt} />
             </div>
           ))}
-          <div>
+          <div className="text-center">
             <span>+ many others</span>
           </div>
         </div>

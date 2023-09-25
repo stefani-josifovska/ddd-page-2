@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { InlineWidget } from "react-calendly";
 import Button from "../UI/Button";
 import closeIcon from "../../_assets/closeIcon.svg";
+import closeIconBlack from "../../_assets/closeIconBlack.svg";
 import Image from "next/image";
 
 const CalendlyPopup: React.FC<{
@@ -29,9 +30,18 @@ const CalendlyPopup: React.FC<{
       {isOpen && (
         <>
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-            <div className="relative w-auto my-6 mx-auto w-10/12 relative">
-              <button onClick={onCloseHandler} className="absolute right-12">
+            <div className="relative my-6 mx-auto w-10/12 relative">
+              <button
+                onClick={onCloseHandler}
+                className="hidden lg:block absolute right-12"
+              >
                 <Image src={closeIcon} alt="close" />
+              </button>
+              <button
+                onClick={onCloseHandler}
+                className="absolute lg:hidden left-12 top-4"
+              >
+                <Image src={closeIconBlack} alt="close" />
               </button>
               <InlineWidget url="https://calendly.com/ddd-invoices/45min" />
             </div>
