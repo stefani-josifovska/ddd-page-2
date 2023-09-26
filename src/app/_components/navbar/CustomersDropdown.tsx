@@ -8,9 +8,9 @@ import {
 } from "./navbarItems";
 import DropdownItem from "./DropdownItem";
 
-const CustomersDropdown: React.FC<{ onCloseMobileMenu?: () => void }> = ({
-  onCloseMobileMenu,
-}) => {
+const CustomersDropdown: React.FC<{
+  onCloseMobileMenu?: () => void;
+}> = ({ onCloseMobileMenu }) => {
   return (
     <div
       className={`${classes.container} flex flex-col xl:flex-row xl:gap-4 h-fit`}
@@ -76,7 +76,7 @@ const CustomersDropdown: React.FC<{ onCloseMobileMenu?: () => void }> = ({
                 desc={item.description}
                 url={item.url}
                 customSize={item.customSize ? item.customSize : undefined}
-                onCloseMobileMenu={onCloseMobileMenu}
+                // onCloseMobileMenu={undefined}
                 isDisabled={true}
               />
             ))}

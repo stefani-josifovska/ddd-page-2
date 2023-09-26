@@ -139,4 +139,12 @@
       text-align: left;
     }
   }
+
+  .disabledLink {
+    pointer-events: none;
+  }
+
+  .disabledMsg {
+    display: block;
+  }
 }
