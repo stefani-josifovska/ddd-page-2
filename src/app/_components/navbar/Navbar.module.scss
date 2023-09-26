@@ -108,22 +108,22 @@
         color: black;
       }
 
-      &:hover .toggleDisp,
-      & button:focus + .toggleDisp,
-      & a:focus + .toggleDisp {
-        display: block;
-      }
+      // &:hover .toggleDisp,
+      // & button:focus + .toggleDisp,
+      // & a:focus + .toggleDisp {
+      //   display: block;
+      // }
     }
   }
 
-  .navDropdownContainer:hover .toggleDisp,
-  .navDropdownContainer button:focus + .toggleDisp,
-  .navDropdownContainer a:focus + .toggleDisp {
-    display: block;
-  }
+  // .navDropdownContainer:hover .toggleDisp,
+  // .navDropdownContainer button:focus + .toggleDisp,
+  // .navDropdownContainer a:focus + .toggleDisp {
+  //   display: block;
+  // }
 
   .toggleDisp {
-    display: none;
+    // display: none;
     left: -250%;
     overflow: hidden;
     opacity: 0;

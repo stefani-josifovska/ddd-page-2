@@ -10,7 +10,8 @@ import DropdownItem from "./DropdownItem";
 
 const CustomersDropdown: React.FC<{
   onCloseMobileMenu?: () => void;
-}> = ({ onCloseMobileMenu }) => {
+  onCloseDropdown?: () => void;
+}> = ({ onCloseMobileMenu, onCloseDropdown }) => {
   return (
     <div
       className={`${classes.container} flex flex-col xl:flex-row xl:gap-4 h-fit`}
@@ -27,6 +28,7 @@ const CustomersDropdown: React.FC<{
               url={item.url}
               customSize={undefined}
               onCloseMobileMenu={onCloseMobileMenu}
+              onCloseDropdown={onCloseDropdown}
             />
           ))}
         </div>
@@ -44,6 +46,7 @@ const CustomersDropdown: React.FC<{
                 url={item.url}
                 customSize={undefined}
                 onCloseMobileMenu={onCloseMobileMenu}
+                onCloseDropdown={onCloseDropdown}
               />
             ))}
           </div>
@@ -60,6 +63,7 @@ const CustomersDropdown: React.FC<{
                 url={item.url}
                 customSize={item.customSize ? item.customSize : undefined}
                 onCloseMobileMenu={onCloseMobileMenu}
+                onCloseDropdown={onCloseDropdown}
               />
             ))}
           </div>
@@ -78,6 +82,7 @@ const CustomersDropdown: React.FC<{
                 customSize={item.customSize ? item.customSize : undefined}
                 // onCloseMobileMenu={undefined}
                 isDisabled={true}
+                onCloseDropdown={onCloseDropdown}
               />
             ))}
           </div>

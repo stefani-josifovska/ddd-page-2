@@ -3,9 +3,10 @@ import classes from "./Dropdown.module.scss";
 import { learnContent } from "./navbarItems";
 import DropdownItem from "./DropdownItem";
 
-const LearnDropdown: React.FC<{ onCloseMobileMenu?: () => void }> = ({
-  onCloseMobileMenu,
-}) => {
+const LearnDropdown: React.FC<{
+  onCloseMobileMenu?: () => void;
+  onCloseDropdown?: () => void;
+}> = ({ onCloseMobileMenu, onCloseDropdown }) => {
   return (
     <div className={classes.learnContainer}>
       {learnContent.map((item, index) => (
@@ -17,6 +18,7 @@ const LearnDropdown: React.FC<{ onCloseMobileMenu?: () => void }> = ({
           url={item.url}
           customSize={undefined}
           onCloseMobileMenu={onCloseMobileMenu}
+          onCloseDropdown={onCloseDropdown}
         />
       ))}
     </div>

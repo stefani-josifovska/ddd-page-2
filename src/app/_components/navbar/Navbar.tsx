@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import classes from "./Navbar.module.scss";
 import Logo from "../../_assets/navbarLogo.svg";
 import Image from "next/image";
@@ -13,6 +14,15 @@ import LearnDropdown from "./LearnDropdown";
 import exportIcon from "../../_assets/exportIcon.svg";
 
 const Navbar: React.FC<{}> = () => {
+  const [displayDropdown, setDisplayDropdown] = useState<number | null>(null);
+
+  const onDisplayDropdown = (newValue: number) => setDisplayDropdown(newValue);
+
+  const closeDropdown = () => {
+    console.log("clicked, close it");
+    setDisplayDropdown(null);
+  };
+
   return (
     <nav
       className={classes.container}
@@ -36,21 +46,42 @@ const Navbar: React.FC<{}> = () => {
                 <li
                   key={`navbar-item-${index}`}
                   className={`${classes.navDropdownContainer} ${classes.navbarItem}`}
+                  onMouseEnter={() => onDisplayDropdown(index)}
+                  onMouseLeave={closeDropdown}
                 >
                   <button id={`dropdown-button-${index}`}>{item.item}</button>
-                  <div
-                    className={classes.toggleDisp}
-                    aria-labelledby={`dropdown-button-${index}`}
-                  >
-                    {item.item === "Customers" && <CustomersDropdown />}
-                    {item.item === "Learn" && <LearnDropdown />}
-                  </div>
+                  {item.item === "Customers" && displayDropdown === index && (
+                    <div
+                      className={classes.toggleDisp}
+                      aria-labelledby={`dropdown-button-${index}`}
+                    >
+                      {item.item === "Customers" &&
+                        displayDropdown === index && (
+                          <CustomersDropdown onCloseDropdown={closeDropdown} />
+                        )}
+                    </div>
+                  )}
+                  {item.item === "Learn" && displayDropdown === index && (
+                    <div
+                      className={classes.toggleDisp}
+                      aria-labelledby={`dropdown-button-${index}`}
+                    >
+                      <LearnDropdown onCloseDropdown={closeDropdown} />
+                    </div>
+                  )}
                 </li>
               );
             }
             return (
               <li key={`navbar-item-${index}`} className={classes.navbarItem}>
-                <Link href={item.url} className={item.item === "API Documentation" ? "flex gap-1" : "inline-block"}>
+                <Link
+                  href={item.url}
+                  className={
+                    item.item === "API Documentation"
+                      ? "flex gap-1"
+                      : "inline-block"
+                  }
+                >
                   {item.item}{" "}
                   {item.item === "API Documentation" && (
                     <Image src={exportIcon} alt="" />
