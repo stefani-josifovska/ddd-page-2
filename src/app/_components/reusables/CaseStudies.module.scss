@@ -67,3 +67,9 @@
     min-height: 400px;
   }
 }
+
+@media (max-width: 1279px) {
+  .container > h2 {
+    margin-top: 16px;
+  }
+}
