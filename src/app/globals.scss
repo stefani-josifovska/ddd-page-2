@@ -34,9 +34,16 @@ h1 {
 
 h2 {
   font-weight: 500;
+  font-size: 2rem;
 }
 
 h3 {
   font-size: 1.3rem;
   font-weight: 500;
+}
+
+@media (max-width: 1279px) {
+  h2 {
+    font-size: 1.2rem;
+  }
 }
