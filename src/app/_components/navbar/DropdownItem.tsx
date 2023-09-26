@@ -10,25 +10,35 @@ const DropdownItem: React.FC<{
   desc: string;
   url: string;
   customSize: number | undefined;
+  isDisabled?: boolean;
   onCloseMobileMenu?: () => void;
-}> = ({ img, title, desc, url, customSize, onCloseMobileMenu }) => {
+}> = ({ img, title, desc, url, customSize, onCloseMobileMenu, isDisabled }) => {
+  const itemContent = (
+    <div className="flex items-start">
+      <Image
+        src={img.src}
+        alt=""
+        width={customSize ? customSize : 20}
+        height="20"
+        className={classes.icon}
+      />
+      <div>
+        <p className={classes.title}>{title}</p>
+        <p className={classes.description}>{desc}</p>
+      </div>
+    </div>
+  );
+
   return (
     <div className={classes.linkContainer} onClick={onCloseMobileMenu}>
-      <Link href={url}>
-        <div className="flex items-start">
-          <Image
-            src={img.src}
-            alt=""
-            width={customSize ? customSize : 20}
-            height="20"
-            className={classes.icon}
-          />
-          <div>
-            <p className={classes.title}>{title}</p>
-            <p className={classes.description}>{desc}</p>
-          </div>
+      {isDisabled ? (
+        <div className={classes.disabledLink}>
+          {itemContent}
+          <span className={classes.disabledMsg}>Coming soon</span>
         </div>
-      </Link>
+      ) : (
+        <Link href={url}>{itemContent}</Link>
+      )}
     </div>
   );
 };

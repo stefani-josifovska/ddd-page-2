@@ -16,7 +16,7 @@ const CustomersDropdown: React.FC<{ onCloseMobileMenu?: () => void }> = ({
       className={`${classes.container} flex flex-col xl:flex-row xl:gap-4 h-fit`}
     >
       <div className="flex-1">
-        <span className={classes.category}>{providersContent.category}</span>
+        <p className={classes.category}>{providersContent.category}</p>
         <div className={classes.linksContWrapper}>
           {providersContent.items.map((item, index) => (
             <DropdownItem
@@ -33,9 +33,7 @@ const CustomersDropdown: React.FC<{ onCloseMobileMenu?: () => void }> = ({
       </div>
       <div className="flex-1 flex flex-col">
         <div className="flex-1">
-          <span className={classes.category}>
-            {enterprisesContent.category}
-          </span>
+          <p className={classes.category}>{enterprisesContent.category}</p>
           <div className={classes.linksContWrapper}>
             {enterprisesContent.items.map((item, index) => (
               <DropdownItem
@@ -79,6 +77,7 @@ const CustomersDropdown: React.FC<{ onCloseMobileMenu?: () => void }> = ({
                 url={item.url}
                 customSize={item.customSize ? item.customSize : undefined}
                 onCloseMobileMenu={onCloseMobileMenu}
+                isDisabled={true}
               />
             ))}
           </div>

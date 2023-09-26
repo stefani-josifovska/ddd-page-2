@@ -24,7 +24,7 @@ const LandingHero: React.FC<{}> = () => {
           content="Start for free"
           variant="primary"
           color="orange"
-          className="px-20"
+          className="w-full md:w-auto md:px-20"
         />
       </div>
       <div className={classes.imgContainer}>

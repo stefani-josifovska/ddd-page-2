@@ -30,7 +30,7 @@ const Platform: React.FC<{}> = () => {
       <Hero content={platformHero} />
       <Grid>
         <div>
-          <Image src={Platform1} alt="" className="m-auto" />
+          <Image src={Platform1} alt="" className="m-auto w-9/12 mb-10 xl:mb-0" />
         </div>
         <div>
           <span>Get up and running in minutes</span>
@@ -130,7 +130,7 @@ const Platform: React.FC<{}> = () => {
           />
         </div>
         <div>
-          <Image src={Platform2} alt="" className="m-auto" />
+          <Image src={Platform2} alt="" className="m-auto my-14" />
         </div>
       </Grid>
       <Prefooter title="More about the DDD Invoices platform" />

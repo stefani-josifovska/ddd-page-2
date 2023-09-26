@@ -14,7 +14,7 @@
 
   & > div {
     padding: 32px;
-    min-height: 400px;
+
     // background-image: url("./caseStudy.png");
     box-shadow: $card-shadow;
     border-radius: $card-radius;
@@ -41,11 +41,7 @@
     color: rgba(232, 73, 14, 1);
   }
 
-  & p:last-of-type {
-    font-size: 1.3rem;
-  }
-
-  & p:first-of-type {
+  & p {
     font-size: 1.5rem;
   }
 
@@ -59,5 +55,15 @@
 @media (max-width: 600px) {
   .content {
     width: 70%;
+
+    & p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .container > div {
+    min-height: 400px;
   }
 }

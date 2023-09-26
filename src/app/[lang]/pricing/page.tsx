@@ -1,9 +1,9 @@
 import React from "react";
 import Hero from "@/app/_components/UI/Hero";
-import { domestic, international, customPoints } from "./pricingPackages";
-import PriceBox from "./PriceBox";
-import Button from "@/app/_components/UI/Button";
-import classes from "./Pricing.module.scss";
+// import { domestic, international, customPoints } from "./pricingPackages";
+// import PriceBox from "./PriceBox";
+// import Button from "@/app/_components/UI/Button";
+// import classes from "./Pricing.module.scss";
 import TrustedBy from "@/app/_components/homepage/TrustedBy";
 import Grid from "@/app/_components/UI/Grid";
 import { heroContent } from "./content";

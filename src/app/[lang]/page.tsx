@@ -102,7 +102,6 @@ export default function Page({
               <li>Different standards for digital reporting & e-invoicing</li>
               <li>Varying sources of inaccurate tax data</li>
             </ul>
-            <br />
             <p>Solution:</p>
             <ul>
               <li>

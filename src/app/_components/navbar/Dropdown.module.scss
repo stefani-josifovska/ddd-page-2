@@ -63,6 +63,27 @@
   background-color: rgba(211, 211, 211, 0.5);
 }
 
+.disabledMsg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: $main-blue;
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+  display: none;
+}
+
+.disabledLink {
+  // pointer-events: none;
+  cursor: default;
+  opacity: 0.8;
+  position: relative;
+}
+
+.disabledLink:hover .disabledMsg {
+  display: block;
+}
+
 @media (max-width: 1279px) {
   .container,
   .learnContainer {
@@ -84,6 +105,9 @@
 
     .category {
       color: white;
+      text-align: start;
+      width: 100%;
+      margin-top: 24px;
     }
   }
 

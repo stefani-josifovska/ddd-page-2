@@ -58,8 +58,8 @@
 .dispAnswer {
   margin-top: 10px;
   opacity: 1;
-  max-height: 200px; /* Adjust this value based on your content */
-  // max-height: fit-content;
+  // max-height: 200px; /* Adjust this value based on your content */
+  max-height: fit-content;
 }
 
 .hideAnswer {

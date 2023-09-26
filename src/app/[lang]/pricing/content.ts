@@ -9,10 +9,10 @@ export const heroContent: heroContentObj = {
   buttons: [
     {
       text: "Book a meeting",
-      href: "https://dddinvoices.com/sign-up",
+      href: "https://calendly.com/ddd-invoices/45min",
       variant: "primary",
       color: "orange",
-      className: "px-20"
+      className: "w-full md:w-auto md:px-20",
     },
   ],
 };
