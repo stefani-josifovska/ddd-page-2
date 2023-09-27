@@ -9,7 +9,7 @@ export const hero: heroContentObj = {
   buttons: [
     {
       text: 'Start for free',
-      href: 'https://dddinvoices.com/sign-up',
+      href: 'https://app.dddinvoices.com/sign-up',
       variant: 'primary',
       color: 'orange',
     },

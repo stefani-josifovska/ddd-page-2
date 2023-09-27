@@ -23,7 +23,7 @@ const Footer: React.FC<{ page?: string }> = ({ page }) => {
             Test for free. Pay when you are ready to deploy.
           </p>
           <ButtonLink
-            href="https://dddinvoices.com/sign-up"
+            href="https://app.dddinvoices.com/sign-up"
             content="Start for free"
             variant="primary"
             color="orange"

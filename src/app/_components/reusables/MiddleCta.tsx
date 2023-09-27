@@ -15,7 +15,7 @@ const MiddleCta: React.FC<{}> = () => {
         current & future invoicing needs, everywhere.
       </h2>
       <ButtonLink
-        href="https://dddinvoices.com/sign-up"
+        href="https://app.dddinvoices.com/sign-up"
         content="Start free integration"
         variant="primary"
         color="orange"

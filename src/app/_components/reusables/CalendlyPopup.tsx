@@ -10,7 +10,8 @@ const CalendlyPopup: React.FC<{
   className?: string;
   variant?: string;
   color?: string;
-}> = ({ className, variant, color }) => {
+  id?: string;
+}> = ({ className, variant, color, id }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const onOpenHandler = () => setIsOpen(true);
@@ -26,6 +27,7 @@ const CalendlyPopup: React.FC<{
         textColor={color || "orange"}
         className={`${className}`}
         onClick={onOpenHandler}
+        id={id}
       />
       {isOpen && (
         <>

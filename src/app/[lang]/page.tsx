@@ -75,6 +75,7 @@ export default function Page({
             variant="secondary"
             color="orange"
             className="px-20"
+            id="Button-More-about-our-platform"
           />
         </div>
         <div className="flex justify-center xl:justify-end mt-10 xl:mt-0">
@@ -112,7 +113,7 @@ export default function Page({
               <li>Simple, fast & universal integration</li>
             </ul>
             <ButtonLink
-              href="https://dddinvoices.com/sign-up"
+              href="https://app.dddinvoices.com/sign-up"
               content="Start for free"
               variant="primary"
               color="orange"

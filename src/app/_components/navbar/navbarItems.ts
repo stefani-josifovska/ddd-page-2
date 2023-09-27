@@ -43,7 +43,7 @@ export const items: itemsArray = [
   },
   {
     item: "API Documentation",
-    url: "https://dddinvoices.com/documentation",
+    url: "https://app.dddinvoices.com/documentation",
     children: false,
   },
 ];

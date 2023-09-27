@@ -7,7 +7,7 @@ export const hero: heroContentObj = {
     'Supercharge your payment processor with locally compliant invoicing & e-invoicing as part of your offering that goes beyond transactions. Increase stickiness and increase average revenue per customer.',
   ],
   buttons: [
-    { text: 'Start for free', href: 'https://dddinvoices.com/sign-up', variant: 'primary', color: 'orange' },
+    { text: 'Start for free', href: 'https://app.dddinvoices.com/sign-up', variant: 'primary', color: 'orange' },
     { text: 'Talk to us', href: '', variant: 'secondary', color: 'orange' },
   ],
 };

@@ -9,7 +9,8 @@ const Button: React.FC<{
   color: string;
   textColor?: string | undefined;
   className?: string;
-}> = ({ content, variant, color, textColor, className, onClick }) => {
+  id?: string;
+}> = ({ content, variant, color, textColor, className, onClick, id }) => {
   const isPrimary = variant === "primary";
   const isBlue = color === "blue";
 
@@ -26,6 +27,7 @@ const Button: React.FC<{
       onClick={onClick}
       className={`${buttonClasses} ${className}`}
       style={buttonStyle}
+      id={id}
     >
       {content}
     </button>

@@ -9,7 +9,8 @@ const ButtonLink: React.FC<{
   color: string;
   textColor?: string | undefined;
   className?: string;
-}> = ({ content, variant, color, textColor, className, href }) => {
+  id?: string;
+}> = ({ content, variant, color, textColor, className, href, id }) => {
   const isPrimary = variant === "primary";
   const isBlue = color === "blue";
 
@@ -26,6 +27,7 @@ const ButtonLink: React.FC<{
       href={href}
       className={`${buttonClasses} ${className} inline-block text-center`}
       style={buttonStyle}
+      id={id}
     >
       {content}
     </a>

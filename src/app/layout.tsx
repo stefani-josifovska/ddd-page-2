@@ -50,9 +50,9 @@ export const metadata: Metadata = {
   title: "DDD Invoices | Global e-invoicing & fiscalization with 1 API",
   description:
     "Enable local & global tax compliant invoicing for your software with a single invoicing, e-invoicing & fiscalization API. E-invoicing API for ERP, SaaS, e-commerce & other internet economy.",
-  icons: {
-    icon: "https://dddinvoices.com/images/bluelogo.png",
-  },
+  // icons: {
+  //   icon: "/favicon.ico",
+  // },
 };
 
 export default function RootLayout({

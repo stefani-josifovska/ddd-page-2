@@ -18,7 +18,7 @@ const CodeExample: React.FC<{}> = () => {
         </p>
         <p>See how easy it is:</p>
         <ButtonLink
-          href="https://dddinvoices.com/documentation"
+          href="https://app.dddinvoices.com/documentation"
           content="Read the docs"
           variant="secondary"
           color="orange"

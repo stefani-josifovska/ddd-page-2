@@ -20,11 +20,12 @@ const LandingHero: React.FC<{}> = () => {
           local tax requirements in just a couple of hours.
         </p>
         <ButtonLink
-          href="https://dddinvoices.com/sign-up"
+          href="https://app.dddinvoices.com/sign-up"
           content="Start for free"
           variant="primary"
           color="orange"
           className="w-full md:w-auto md:px-20"
+          id="Button-Click-Read-the-docs-index"
         />
       </div>
       <div className={classes.imgContainer}>

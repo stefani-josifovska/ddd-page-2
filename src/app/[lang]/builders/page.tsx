@@ -24,7 +24,7 @@ const heroContent: heroContentObj = {
     },
     {
       text: "Login",
-      href: "https://dddinvoices.com/login",
+      href: "https://app.dddinvoices.com/login",
       variant: "secondary",
       color: "orange",
     },
@@ -76,13 +76,13 @@ const Builders: React.FC<{}> = () => {
             </ol>
             <div>
               <ButtonLink
-                href="https://dddinvoices.com/sign-up"
+                href="https://app.dddinvoices.com/sign-up"
                 content="Start for free"
                 variant="primary"
                 color="orange"
               />
               <ButtonLink
-                href="https://dddinvoices.com/documentation"
+                href="https://app.dddinvoices.com/documentation"
                 content="Read the docs"
                 variant="secondary"
                 color="orange"

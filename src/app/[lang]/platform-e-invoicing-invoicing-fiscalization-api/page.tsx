@@ -49,14 +49,14 @@ const Platform: React.FC<{}> = () => {
           </ol>
           <div className={classes.heroBtns}>
             <ButtonLink
-              href="https://dddinvoices.com/sign-up"
+              href="https://app.dddinvoices.com/sign-up"
               content="Start for free"
               variant="primary"
               color="orange"
               className="xl:mr-4 px-10"
             />
             <ButtonLink
-              href="https://dddinvoices.com/documentation"
+              href="https://app.dddinvoices.com/documentation"
               content="Read the docs"
               variant="secondary"
               color="orange"
