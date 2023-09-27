@@ -22,8 +22,8 @@ const CookieConsent: React.FC<{}> = () => {
     let cookieConsent = getCookie("cookieConsent");
     let localStorageItem = localStorage.getItem("cookieConsent");
 
-    console.log(localStorageItem);
-    console.log("read cookies");
+    // console.log(localStorageItem);
+    // console.log("read cookies");
 
     if (!(cookieConsent || localStorageItem)) setIsAccepted(false);
   }, []);

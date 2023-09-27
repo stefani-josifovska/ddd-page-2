@@ -1,16 +1,16 @@
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
 
 async function getLocales() {
-  const locales = await fetch('https://e-invoices.online/json.rpc', {
-    method: 'POST',
+  const locales = await fetch("https://app.dddinvoices.com/json.rpc", {
+    method: "POST",
     body: JSON.stringify({
-      jsonrpc: '2.0',
-      method: 'Auth.GetSupportedCultures',
+      jsonrpc: "2.0",
+      method: "Auth.GetSupportedCultures",
       params: {},
       id: 1,
     }),
-    credentials: 'include',
+    credentials: "include",
   });
 
   const data = await locales.json();
@@ -25,9 +25,9 @@ export default async function middleware(request: NextRequest) {
   // console.log(request.cookies.has('d3pro.preferred-culture'), 'Cookies');
   const pathname = request.nextUrl.pathname; // Get the pathname from the request
   const browserLocalLanguage = request.headers
-    .get('accept-language')
-    ?.split(',')[0]; // Get the browser language from the request
-  let preferredCulture = request.cookies.get('d3pro.preferred-culture')?.value; // Get the preferred culture from the request
+    .get("accept-language")
+    ?.split(",")[0]; // Get the browser language from the request
+  let preferredCulture = request.cookies.get("d3pro.preferred-culture")?.value; // Get the preferred culture from the request
 
   const response = NextResponse.next();
 
@@ -57,9 +57,9 @@ export default async function middleware(request: NextRequest) {
 
   console.log(preferredCulture);
 
-  response.cookies.set('d3pro.preferred-culture', pathname.split('/')[1], {
-    path: '/',
-    sameSite: 'strict',
+  response.cookies.set("d3pro.preferred-culture", pathname.split("/")[1], {
+    path: "/",
+    sameSite: "strict",
     secure: true,
     expires: Date.now() + 1000 * 60 * 60 * 24 * 365,
   }); // Set the cookie to the first supported locale
@@ -68,5 +68,5 @@ export default async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: '/((?!_next).*)',
+  matcher: "/((?!_next).*)",
 };
